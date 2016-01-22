@@ -92,7 +92,7 @@ int __cdecl main(void)
         return 1;
     }
 
-    // Accept a client socket
+    // Accept a client sockets
     ClientSocket = accept(ListenSocket, NULL, NULL);
     if (ClientSocket == INVALID_SOCKET) {
         printf("accept failed with error: %d\n", WSAGetLastError());
